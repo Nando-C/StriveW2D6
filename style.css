@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background-color: #fbfdfd;
+}
+#title {
+    padding: 1em;
+    background-color: #d2f3eb;
+    color: teal;
+}
+h3 {
+    padding: 2em;
+    color: rgb(23, 94, 94);
+}
+th {
+    padding: 1em;
+    color: rgb(23, 94, 94);
+}
+td .pic {
+    block-size: 10em;
+    margin-bottom: 0em;
+    border-radius: 1em;
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+}
+
+.description {
+    padding: 10px;
+    border-radius: 1em;
+    border-top-left-radius: 0em;
+    /* border-top-right-radius: 0em; */
+    color: white;
+    background-color: #4d8a7c;
+}
+.hideImg {
+    visibility: hidden;
+}
+#feedBack {
+    text-align: center;
+}
+
+#footer {
+    padding: 3em;
+    background-color: #d2f3eb;
+}
