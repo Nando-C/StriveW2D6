@@ -27,11 +27,28 @@ const toggleImgClass = function(){
     }
 }
 
-let colorTheme = ['#568203', '#FF0800', '#3FFF00', '#F400A1', '#FF4500']
 const colorPrice = function(){
     let price = document.querySelectorAll(`.price`)
-    // console.log(price)
+    
     for(i=0; i<price.length; i++){
-        price[i].style.color = colorTheme[i]
+        price[i].style.color = getRandomColor()
     }
 }
+
+const getRandomColor = function() {
+    const red = Math.round(Math.random() * 255);
+    const green = Math.round(Math.random() * 255);
+    const blue = Math.round(Math.random() * 255);
+
+    return "rgb(" + red + ", " + green + ", " + blue + ")";
+  }
+
+//   ALTERNATIVE way to generate a random color
+//   const getRandomColor = function() { 
+//     var letters = '0123456789ABCDEF';
+//     var color = '#';
+//     for (var i = 0; i < 6; i++) {
+//       color += letters[Math.floor(Math.random() * 16)];
+//      }
+//     return color;
+//   }
